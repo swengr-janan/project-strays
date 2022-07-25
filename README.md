@@ -4,8 +4,11 @@ NFT-based collectibles are gaining popularity in DeFi markets but currently exis
 
 # What is Project Strays?
 
-It is a limited edition NFT collection that aims to help stray dogs here (but not limited to) in the Philippines. 
+It is a limited edition NFT collection with instrinic value and utility that aims to help stray dogs here (but not limited to) in the Philippines. 
 
-# Total Supply : 3,3333
-# Ethereum Blockchain
+# Total Supply
+3,333 free-ranging urban dogs
+
+# Blockchain
+Ethereum 
 
