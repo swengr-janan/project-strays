@@ -12,3 +12,5 @@ It is a limited edition NFT collection with instrinic value and utility that aim
 # Blockchain
 Ethereum 
 
+# Twitter
+https://twitter.com/ProjectStrays
