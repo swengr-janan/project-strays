@@ -9,7 +9,7 @@ As a team with members that are soft-hearted when it comes to dogs and has enoug
 
 # What is Project Strays?
 
-It is a limited edition NFT collection with instrinic value and utility that aims to help stray dogs here (but not limited to) in the Philippines. 
+It is a limited edition NFT collection with intrinsic value and utility that aims to help stray dogs here (but not limited to) in the Philippines. 
 
 # Total Supply
 3,333 free-ranging urban dogs
