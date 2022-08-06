@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const closeMobileMenu = () => setClick(false);
+  const [click, setClick] = useState(false)
+  const closeMobileMenu = () => setClick(false)
 
   return (
     <nav className="navbar">
@@ -35,6 +35,6 @@ function Navbar() {
         </ul>
       </div>
     </nav>
-  );
+  )
 }
-export default Navbar;
+export default Navbar

@@ -46,6 +46,15 @@
         ]
       }
     ],
-    "react/display-name": 1
+    "react/display-name": 1,
+    "semi": "off",
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ]
   }
 }
