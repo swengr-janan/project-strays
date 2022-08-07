@@ -1,18 +1,18 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
+import { MintingSoon } from './pages'
 import './App.css'
 
-function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" exact />
-      </Routes>
-    </Router>
+const App = () => (
+  <Router>
+    {/* <Navbar /> */}
+    <MintingSoon />
+    <Routes>
+      <Route path="/" exact />
+    </Routes>
+  </Router>
 
-  )
-}
+)
 
 export default App

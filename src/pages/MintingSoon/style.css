@@ -1,0 +1,67 @@
+#MintingSoon {
+  width: 100%;
+  height: 100%;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+#MintingSoon .logo-wrapper {
+  width: 100%;
+}
+
+#MintingSoon .logo-wrapper .logo {
+  width: 490px;
+  height: auto;
+}
+
+
+#MintingSoon .minting-soon-content h1 {
+  font-size: 128px;
+  color: #ddd;
+}
+
+#MintingSoon .minting-soon-content p {
+  font-size: 36px;
+  color: #575757;
+  width: 490px;
+  margin-top: -.5em;
+}
+
+#MintingSoon .form-wrapper {
+  width: 100%;
+}
+
+#MintingSoon .form-wrapper form {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+}
+
+#MintingSoon .form-wrapper form input {
+  background: #2D2C2C;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  font-size: 24px;
+}
+
+#MintingSoon .form-wrapper form input:focus {
+  outline: none;
+}
+
+#MintingSoon .form-wrapper form input:placeholder {
+  color: #434343;
+}
+
+#MintingSoon .form-wrapper form button {
+  background: #D9D9D9;
+  border: 0;
+  border-radius: 7px;
+  color: #404040;
+  padding: 15px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 24px;
+}
