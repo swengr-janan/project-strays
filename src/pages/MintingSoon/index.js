@@ -1,5 +1,4 @@
-import Discord from '../../icons/Discord'
-import Twitter from '../../icons/Twitter'
+import { Discord, Twitter } from '../../icons'
 import './style.css'
 
 const MintingSoon = () => {
@@ -13,16 +12,16 @@ const MintingSoon = () => {
       <div className="flex justify-center logo-wrapper">
         <img src="images/logo.png" alt="Project Stray Logo" className="logo" />
       </div>
-      <div className="minting-soon-content flex flex-col justify-center items-center text-center -mt-24">
-        <h1>MINTING SOON</h1>
-        <p>
+      <div className="minting-soon-content flex flex-col justify-center items-center text-center">
+        <h1 className="py-5 leading-none sm:text-8xl lg:text-9xl">MINTING SOON</h1>
+        <p className="py-5 sm:text-3xl lg:text-4xl">
           3,333 free-ranging urban dogs in the city. Join us as we rescue and show them some love.
         </p>
       </div>
-      <div className="form-wrapper flex justify-center mt-10">
+      <div className="form-wrapper flex justify-center pt-8 sm:w-full md:w-128">
         <form onSubmit={submit}>
-          <input type="email" placeholder="Please enter your email address" required />
-          <button type="submit">Notify Me</button>
+          <input className="sm:text-base md:text-2xl" type="email" placeholder="Please enter your email address" required />
+          <button className="sm:text-xl md:text-2xl" type="submit">Notify Me</button>
         </form>
       </div>
       <div className="socials flex justify-center items-center gap-5 mt-16">

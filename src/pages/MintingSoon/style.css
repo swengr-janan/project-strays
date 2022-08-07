@@ -15,22 +15,17 @@
 
 
 #MintingSoon .minting-soon-content h1 {
-  font-size: 128px;
   color: #ddd;
 }
 
 #MintingSoon .minting-soon-content p {
-  font-size: 36px;
   color: #575757;
   max-width: 490px;
   margin-top: -.5em;
 }
 
 #MintingSoon .form-wrapper {
-  /* width: 100%; */
   margin: auto;
-  max-width: 432px;
-  min-width: 350px;
 }
 
 #MintingSoon .form-wrapper form {
@@ -46,7 +41,6 @@
   color: white;
   padding: 20px;
   width: 100%;
-  font-size: 24px;
 }
 
 #MintingSoon .form-wrapper form input:focus {
@@ -64,7 +58,6 @@
   color: #404040;
   padding: 15px;
   position: absolute;
-  right: 5px;
-  top: 5px;
-  font-size: 24px;
+  right: 0;
+  height: 100%;
 }
