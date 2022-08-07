@@ -5,20 +5,23 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '480px',
+      sm: '320px',
       md: '768px',
       lg: '976px',
       xl: '1440px',
     },
-    fontFamily :{
-      sans: ['Mouse Memoirs', 'sans-serif']
+    fontFamily: {
+      sans: ['Mouse Memoirs', 'sans-serif'],
     },
     colors: {
       primary: '',
       secondary: '',
-      
     },
-    extend: {},
+    extend: {
+      width: {
+        128: '32rem',
+      },
+    },
   },
   plugins: [],
 }
