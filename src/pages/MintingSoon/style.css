@@ -22,18 +22,21 @@
 #MintingSoon .minting-soon-content p {
   font-size: 36px;
   color: #575757;
-  width: 490px;
+  max-width: 490px;
   margin-top: -.5em;
 }
 
 #MintingSoon .form-wrapper {
-  width: 100%;
+  /* width: 100%; */
+  margin: auto;
+  max-width: 432px;
+  min-width: 350px;
 }
 
 #MintingSoon .form-wrapper form {
   position: relative;
   display: inline-block;
-  width: 30%;
+  width: 100%;
 }
 
 #MintingSoon .form-wrapper form input {
