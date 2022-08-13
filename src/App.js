@@ -1,7 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
+import { Toaster } from 'react-hot-toast'
+import { Navbar } from './components'
 import { MintingSoon } from './pages'
+
 import './App.css'
 
 const App = () => (
@@ -10,6 +12,7 @@ const App = () => (
       ? <MintingSoon />
       : (
         <>
+          <Toaster />
           <Navbar />
           <Routes>
             <Route path="/" exact />
