@@ -18,13 +18,13 @@ const MintingSoon = () => {
           3,333 free-ranging urban dogs in the city. Join us as we rescue and show them some love.
         </p>
       </div>
-      <div className="form-wrapper flex justify-center pt-8 sm:w-full md:w-128">
+      <div className="form-wrapper flex justify-center pt-4 sm:w-full md:w-128">
         <form onSubmit={submit}>
           <input className="sm:text-base md:text-2xl" type="email" placeholder="Please enter your email address" required />
           <button className="sm:text-xl md:text-2xl" type="submit">Notify Me</button>
         </form>
       </div>
-      <div className="socials flex justify-center items-center gap-5 mt-16">
+      <div className="socials flex justify-center items-center gap-5 mt-8">
         {/* Discord */}
         <a href="https://discord.gg/t3stBfrT" target="_blank" rel="noreferrer">
           <Discord />
