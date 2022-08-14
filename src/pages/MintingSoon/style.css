@@ -9,19 +9,21 @@
 }
 
 #MintingSoon .logo-wrapper .logo {
-  width: 490px;
+  width: 360px;
   height: auto;
 }
 
 
 #MintingSoon .minting-soon-content h1 {
   color: #ddd;
+  font-size: 8vh;
 }
 
 #MintingSoon .minting-soon-content p {
   color: #575757;
   max-width: 490px;
   margin-top: -.5em;
+  
 }
 
 #MintingSoon .form-wrapper {
