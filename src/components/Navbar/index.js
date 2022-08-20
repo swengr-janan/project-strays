@@ -1,49 +1,46 @@
-import React, { useState } from 'react'
-import toast from 'react-hot-toast'
-import { Link } from 'react-router-dom'
-import { Discord } from '../../icons'
+import logo from '../../images/strays-logo-white.png'
+import { Discord, Twitter } from '../../icons'
 
-const Navbar = () => {
-  const [click, setClick] = useState(false)
-  const closeMobileMenu = () => setClick(false)
-  const notify = () => {
-    toast('Here is your test toast.', { icon: <Discord /> })
-  }
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          PROJECT STRAYS
-        </Link>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className="nav-item">
-            <button type="button" className="nav-links" onClick={notify}>
-              test toast
-            </button>
+const Navbar = () => (
+  <nav className="py-4 px-6 text-sm text-white">
+    <div className="flex">
+      <div className="flex-none text-gray-light">
+        <img src={logo} alt="Strays Logo" width="50" height="50" />
+      </div>
+      <div className="flex flex-auto">
+        <ul className="flex flex-auto justify-end px-4">
+          <li className="text-gray-light p-4 text-xl">
+            <a href="#mint">
+              MINT
+            </a>
           </li>
-          <li className="nav-item">
-            <Link to="/mint" className="nav-links" onClick={notify}>
-              Mint
-            </Link>
+          <li className="text-gray-light p-4 text-xl">
+            <a href="#roadmap">
+              ROADMAP
+            </a>
           </li>
-          <li className="nav-item">
-            <Link to="/roadmap" className="nav-links" onClick={closeMobileMenu}>
-              Roadmap
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/faq" className="nav-links" onClick={closeMobileMenu}>
+          <li className="text-gray-light p-4 text-xl">
+            <a href="#faqs">
               FAQs
-            </Link>
+            </a>
           </li>
-          <li className="nav-item">
-            <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
-              Team
-            </Link>
+          <li className="text-gray-light p-4 text-xl">
+            <a href="#team">
+              TEAM
+            </a>
           </li>
         </ul>
+        <div className="flex-none flex items-center">
+          <div className="flex-none text-gray-light">
+            <Twitter className="fill-gray-light mx-2" />
+          </div>
+          <div className="flex-none">
+            <Discord className="fill-gray-light mx-2" />
+          </div>
+        </div>
       </div>
-    </nav>
-  )
-}
+    </div>
+  </nav>
+)
+
 export default Navbar

@@ -27,12 +27,12 @@ const MintingSoon = () => {
       <div className="socials flex justify-center items-center gap-5 mt-8">
         {/* Discord */}
         <a href="https://discord.gg/t3stBfrT" target="_blank" rel="noreferrer">
-          <Discord />
+          <Discord className="fill-gray-dark" />
         </a>
 
         {/* Twitter */}
         <a href="https://twitter.com/ProjectStrays" target="_blank" rel="noreferrer">
-          <Twitter />
+          <Twitter className="fill-gray-dark" />
         </a>
       </div>
     </div>
