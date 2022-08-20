@@ -1,10 +1,30 @@
+import { useState } from 'react'
 import { Discord, Twitter } from '../../icons'
 import './style.css'
 
 const MintingSoon = () => {
-  const submit = () => {
-    // eslint-disable-next-line no-console
-    console.log('form submit')
+  const [email, setEmail] = useState({
+    email: '',
+  })
+
+  const [isSending, setIsSending] = useState(false)
+
+  const submit = async () => {
+    setIsSending(true)
+    await fetch(`https://api.strays.dog/v1/email?key=${process.env.REACT_APP_API_KEY}`, {
+      method: 'POST',
+      body: JSON.stringify(email),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => {
+        // eslint-disable-next-line no-console
+        console.log(json)
+        setEmail({ email: '' })
+        setIsSending(false)
+      })
   }
 
   return (
@@ -19,10 +39,10 @@ const MintingSoon = () => {
         </p>
       </div>
       <div className="form-wrapper flex justify-center pt-4 sm:w-full md:w-128">
-        <form onSubmit={submit}>
-          <input className="sm:text-base md:text-2xl" type="email" placeholder="Please enter your email address" required />
-          <button className="sm:text-xl md:text-2xl" type="submit">Notify Me</button>
-        </form>
+        <div>
+          <input value={email.email} onChange={(e) => setEmail({ email: e.target.value })} className="sm:text-base md:text-2xl" type="email" placeholder="Please enter your email address" required />
+          <button onClick={submit} className="sm:text-xl md:text-2xl" type="submit" disabled={isSending}>{isSending ? 'Sending...' : 'Notify Me'}</button>
+        </div>
       </div>
       <div className="socials flex justify-center items-center gap-5 mt-8">
         {/* Discord */}
