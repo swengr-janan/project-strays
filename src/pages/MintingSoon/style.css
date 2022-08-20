@@ -30,13 +30,13 @@
   margin: auto;
 }
 
-#MintingSoon .form-wrapper form {
+#MintingSoon .form-wrapper div {
   position: relative;
   display: inline-block;
   width: 100%;
 }
 
-#MintingSoon .form-wrapper form input {
+#MintingSoon .form-wrapper div input {
   background: #2D2C2C;
   border: 0;
   border-radius: 10px;
@@ -45,15 +45,15 @@
   width: 100%;
 }
 
-#MintingSoon .form-wrapper form input:focus {
+#MintingSoon .form-wrapper div input:focus {
   outline: none;
 }
 
-#MintingSoon .form-wrapper form input:placeholder {
+#MintingSoon .form-wrapper div input:placeholder {
   color: #434343;
 }
 
-#MintingSoon .form-wrapper form button {
+#MintingSoon .form-wrapper div button {
   background: #D9D9D9;
   border: 0;
   border-radius: 7px;
