@@ -8,7 +8,12 @@ import './App.css'
 const App = () => (
   <Router>
     {process.env.REACT_APP_STATUS === 'maintenance'
-      ? <MintingSoon />
+      ? (
+        <>
+          <Toaster />
+          <MintingSoon />
+        </>
+      )
       : (
         <>
           <Toaster />

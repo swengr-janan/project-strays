@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import toast from 'react-hot-toast'
 import { Discord, Twitter } from '../../icons'
 import './style.css'
 
@@ -20,10 +21,12 @@ const MintingSoon = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-        // eslint-disable-next-line no-console
-        console.log(json)
         setEmail({ email: '' })
         setIsSending(false)
+        toast(json.message, {
+          position: 'top-right',
+          icon: json.success ? '✅' : '❌',
+        })
       })
   }
 
