@@ -1,18 +1,24 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import { MintingSoon } from './pages'
+import { Toaster } from 'react-hot-toast'
+import { Landing, MintingSoon } from './pages'
+
 import './App.css'
 
 const App = () => (
   <Router>
     {process.env.REACT_APP_STATUS === 'maintenance'
-      ? <MintingSoon />
+      ? (
+        <>
+          <Toaster />
+          <MintingSoon />
+        </>
+      )
       : (
         <>
-          <Navbar />
+          <Toaster />
           <Routes>
-            <Route path="/" exact />
+            <Route path="/" exact element={<Landing />} />
           </Routes>
         </>
       )}
