@@ -28,12 +28,18 @@ const MintingSoon = () => {
           icon: json.success ? '✅' : '❌',
         })
       })
+      .catch(() => {
+        toast('Something went wrong. Please try again later.', {
+          position: 'top-right',
+          icon: '❌',
+        })
+      })
   }
 
   return (
     <div id="MintingSoon" className="p-5">
       <div className="flex justify-center logo-wrapper">
-        <img src="images/logo.png" alt="Project Stray Logo" className="logo" />
+        <img src="images/logo.webp" alt="Project Stray Logo" className="logo" />
       </div>
       <div className="minting-soon-content flex flex-col justify-center items-center text-center">
         <h1 className="py-5 leading-none sm:text-8xl lg:text-9xl">MINTING SOON</h1>

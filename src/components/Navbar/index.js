@@ -1,6 +1,6 @@
 import { BiMenu } from 'react-icons/bi'
 import { useState } from 'react'
-import logo from '../../images/strays-logo-white.png'
+import logo from '../../images/strays-logo-white.webp'
 import { Discord, Twitter } from '../../icons'
 
 const Navbar = () => {
